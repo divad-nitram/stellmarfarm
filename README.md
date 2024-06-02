@@ -35,11 +35,15 @@ https://github.com/FirstPrinciplesDevelopment/stellmarfarm/assets/38818928/3c26e
 
 # More Information
 
+### Tailwind CSS
+
+[Tailwind CSS](https://tailwindcss.com/) is a CSS framework with [great documentation](https://tailwindcss.com/docs/utility-first).
+
 ### Parcel
 
 [Parcel](https://parceljs.org/) is used to
 - copy all your HTML, CSS and JS from src/ to dist/,
-- use tailwindcss to scan your source code and compile the minimal CSS for tailwind classes you use, see [the docs](https://tailwindcss.com/docs/guides/parcel),
+- use [tailwindcss](https://tailwindcss.com/) to scan your source code and compile the minimal CSS for tailwind classes you use, see [the docs](https://tailwindcss.com/docs/guides/parcel),
 - start a development server that rebuilds and hot reloads the page in your browser when you make changes in src/.
 
 ### Directory Structure
