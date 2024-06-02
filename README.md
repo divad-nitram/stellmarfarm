@@ -1,6 +1,6 @@
 # Getting started
 
-### Developing - Codespaces
+### Developing in GitHub Codespaces (recommended)
 
 The codespace will run `npm install` and `npm run dev` automatically. It may take a minute or two, but once it has started up, click "Open in Browser" to open the site in a new tab. It will hot reload (automatically update) as you make changes. See the video below for reference.
 
@@ -8,20 +8,28 @@ The codespace will run `npm install` and `npm run dev` automatically. It may tak
 https://github.com/FirstPrinciplesDevelopment/stellmarfarm/assets/38818928/3c26eebc-9a62-48dc-bede-6874c0ef0893
 
 
-### Developing - Local
+### Developing Locally
 
-1. Install dependencies.
+
+1. Install [Node.js 20](https://nodejs.org/en), [git](https://git-scm.com/downloads), and an editor such as [VS Code](https://code.visualstudio.com/).
+
+2. Clone this git repository and open it in your editor.
+    ```sh
+    git clone https://github.com/FirstPrinciplesDevelopment/stellmarfarm.git
+    ``` 
+
+3. Install dependencies.
     ```sh
     npm install
     ```
     
-2. Use parcel to build and start development server.
+4. Use parcel to build and start development server.
 
     ```sh
     npm run dev
     ```
 
-3. Browse to [localhost:1234](http://localhost:1234). As you make edits, parcel will rebuild and hot reload the page.
+5. Browse to [localhost:1234](http://localhost:1234). As you make edits, parcel will rebuild and hot reload the page.
 
 
 
