@@ -5,9 +5,7 @@
 The codespace will run `npm install` and `npm run dev` automatically. It may take a minute or two, but once it has started up, click "Open in Browser" to open the site in a new tab. It will hot reload (automatically update) as you make changes. See the video below for reference.
 
 
-
-https://github.com/FirstPrinciplesDevelopment/stellmarfarm/assets/38818928/04ca44a6-8142-43c7-8939-56ede6eaf6ca
-
+https://github.com/FirstPrinciplesDevelopment/stellmarfarm/assets/38818928/3c26eebc-9a62-48dc-bede-6874c0ef0893
 
 
 ### Developing - Local
