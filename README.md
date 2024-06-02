@@ -46,9 +46,6 @@ https://github.com/FirstPrinciplesDevelopment/stellmarfarm/assets/38818928/3c26e
 
 ```
 .github/
-.parcel-cache/
-dist/
-node_modules/
 src/
 .gitignore
 .postcssrc
@@ -59,11 +56,5 @@ tailwind.config.js
 ```
 
 - **.github/** contains definitions of ***workflows*** also called ***actions*** that can, among other things, deploy every time you push new code to GitHub.
-- **.parcel-cache/** is a temporary cache to speed up development builds.
-- **dist/** is where the built, minified HTML, JS and CSS will be put by parcel. These files should not be manually edited.
-- **node_modules/** is where npm stores the code installed with `npm install`.
 - **src/** contains the HTML, JS and CSS that you can edit.
-- **.gitignore** lists files and directories that git will ignore.
-
-
 
