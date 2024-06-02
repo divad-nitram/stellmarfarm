@@ -1,0 +1,5 @@
+{
+    "name": "stellmarfarm codespace",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "postCreateCommand": "npm install && npm run dev"
+}

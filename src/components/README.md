@@ -1,0 +1,3 @@
+This directory contains reusable [custom elements](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements) for elements common to many pages, such as the footer and navigation menu.
+
+Each subdirectory contains a {component-name}.html and {component-name}.js file. Currently, the HTML files are only present for ease of development, but ultimately the JS files may be modified to read the HTML files as described [here](https://stackoverflow.com/questions/55080103/how-to-separate-web-components-to-individual-files-and-load-them#55081177).
