@@ -1,110 +1,29 @@
 <div>
-  <p>This is the monster vote component.</p>
-  <div id="monster-vote-form">
-    <form>
+  <div>
+    <form id="monster-vote-form">
       <div class="space-y-12">
         <div class="border-b border-gray-900/10 pb-12">
-          <h2 class="text-base font-semibold leading-7 text-gray-900">Vote For Your Favorite Monster</h2>
-          <p class="mt-1 text-sm leading-6 text-gray-600">All of these monsters are hiding somewhere in the corn maze.
-            Did you find all of them?</p>
+          <div class="py-8">
+            <h2 class="text-xl font-semibold leading-7 text-gray-900">Vote For Your Favorite Monster!</h2>
+            <p class="m-1 text-sm leading-6 text-gray-600">All of these monsters are hiding somewhere in our corn maze.
+            </p>
+          </div>
 
-
-          <fieldset>
+          <fieldset id="monster-fieldset" class="min-w-full">
             <legend class="text-sm font-semibold leading-6 text-gray-900">Favorite Monster</legend>
-            <p class="mt-1 text-sm leading-6 text-gray-600">Vote for your favorite monster.</p>
-            <div class="m-8 grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-8 border-sf-red-300 border rounded">
-
-              <div class="">
-                <input id="monster1" name="favorite_monster" type="radio" class="peer hidden">
-                <label for="monster1"
-                  class="peer-checked:ring-4 peer-checked:ring-sf-indigo-600 rounded-lg block text-sm font-medium leading-6">
-                  <div class="static">
-                    <img
-                      class="relative pt-10 px-10 flex items-center justify-center relative overflow-hidden bg-sf-red-50 rounded-lg"
-                      src="http://localhost:8000/storage/v1/object/public/monsters/2024/anneofgreenghoulsweb.png?t=2024-07-04T14%3A58%3A10.053Z"
-                      alt="">
-                    <div class="absolute bottom-20">
-                      <span class="block opacity-75 -mb-1">Stellmar Farm</span>
-                      <div class="flex justify-between">
-                        <span class="block font-semibold text-xl">Anne of Green Ghouls</span>
-                      </div>
-                    </div>
-                  </div>
-                </label>
-              </div>
-
-              <div class="">
-                <input id="monster2" name="favorite_monster" type="radio" class="peer hidden">
-                <label for="monster2"
-                  class="peer-checked:ring-4 peer-checked:ring-sf-indigo-600 rounded-lg block text-sm font-medium leading-6">
-                  <div class="relative overflow-hidden bg-sf-red-50 rounded-lg">
-                    <div class="relative pt-10 px-10 flex items-center justify-center">
-                      <img class="relative w-40 rounded-md"
-                        src="http://localhost:8000/storage/v1/object/public/monsters/2024/galea.png" alt="">
-                    </div>
-                    <div class="relative px-6 pb-6 mt-6">
-                      <span class="block opacity-75 -mb-1">Galea Family</span>
-                      <div class="flex justify-between">
-                        <span class="block font-semibold text-xl">Ghost</span>
-                      </div>
-                    </div>
-                  </div>
-                </label>
-              </div>
-
-              <div class="">
-                <input id="monster3" name="favorite_monster" type="radio" class="peer hidden">
-                <label for="monster3"
-                  class="peer-checked:ring-4 peer-checked:ring-sf-indigo-600 rounded-lg block text-sm font-medium leading-6">
-                  <div class="relative overflow-hidden bg-sf-red-50 rounded-lg">
-                    <div class="relative pt-10 px-10 flex items-center justify-center">
-                      <img class="relative w-40 rounded-md"
-                        src="http://localhost:8000/storage/v1/object/public/monsters/2024/galea.png" alt="">
-                    </div>
-                    <div class="relative px-6 pb-6 mt-6">
-                      <span class="block opacity-75 -mb-1">Galea Family</span>
-                      <div class="flex justify-between">
-                        <span class="block font-semibold text-xl">Ghost</span>
-                      </div>
-                    </div>
-                  </div>
-                </label>
-              </div>
-
-              <div class="">
-                <input id="monster4" name="favorite_monster" type="radio" class="peer hidden">
-                <label for="monster4"
-                  class="peer-checked:ring-4 peer-checked:ring-sf-indigo-600 rounded-lg block text-sm font-medium leading-6">
-                  <div class="relative overflow-hidden bg-sf-red-50 rounded-lg">
-                    <div class="relative pt-10 px-10 flex items-center justify-center">
-                      <img class="relative w-40 rounded-md"
-                        src="http://localhost:8000/storage/v1/object/public/monsters/2024/galea.png" alt="">
-                    </div>
-                    <div class="relative px-6 pb-6 mt-6">
-                      <span class="block opacity-75 -mb-1">Galea Family</span>
-                      <div class="flex justify-between">
-                        <span class="block font-semibold text-xl">Ghost</span>
-                      </div>
-                    </div>
-                  </div>
-                </label>
-              </div>
+            <p class="mt-1 text-sm leading-6 text-gray-600">Which Monster Was Your Favorite?</p>
+            <div id="monster-options"
+              class="my-8 min-w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-6 lg:gap-x-6">
+              <!--Monsters will be dynamically inserted here.-->
             </div>
           </fieldset>
 
-
-        </div>
-
-        <div class="border-b border-gray-900/10 pb-12">
-          <h2 class="text-base font-semibold leading-7 text-gray-900">Personal Information</h2>
-          <p class="mt-1 text-sm leading-6 text-gray-600">Use a permanent address where you can receive mail.</p>
-
           <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div class="sm:col-span-4">
-              <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
+              <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
               <div class="mt-2">
-                <input type="text" name="first-name" id="first-name" autocomplete="given-name"
-                  class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <input type="text" name="name" id="name" autocomplete="given-name"
+                  class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sf-orange-600 sm:text-sm sm:leading-6">
               </div>
             </div>
 
@@ -112,16 +31,10 @@
               <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
               <div class="mt-2">
                 <input id="email" name="email" type="email" autocomplete="email"
-                  class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                  class="required block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sf-orange-600 sm:text-sm sm:leading-6">
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="border-b border-gray-900/10 pb-12">
-          <h2 class="text-base font-semibold leading-7 text-gray-900">Contact Preferences</h2>
-          <p class="mt-1 text-sm leading-6 text-gray-600">May we send you occasional emails about events at Stellmar
-            Farm?</p>
 
           <div class="mt-10 space-y-10">
             <fieldset>
@@ -129,11 +42,11 @@
               <div class="mt-6 space-y-6">
                 <div class="relative flex gap-x-3">
                   <div class="flex h-6 items-center">
-                    <input id="contact_consent" name="contact_consent" type="checkbox"
-                      class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                    <input id="contact_consent" name="contact_consent" type="checkbox" value="true"
+                      class="h-4 w-4 rounded border-gray-300 text-sf-orange-600 focus:ring-sf-orange-600">
                   </div>
                   <div class="text-sm leading-6">
-                    <label for="contact_consent" class="font-medium text-gray-900">I agree to receive emails.</label>
+                    <label for="contact_consent" class="font-medium text-gray-900">I want to receive emails.</label>
                     <p class="text-gray-500">Check to receive occasional emails from Stellmar Farm.</p>
                   </div>
                 </div>
@@ -145,9 +58,10 @@
       </div>
 
       <div class="mt-6 flex items-center justify-end gap-x-6">
-        <button type="button" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
-        <button type="submit"
-          class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
+        <!-- TODO: remove cancel button -->
+        <button type="reset" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
+        <button type="submit" id="monster-form-submit"
+          class="rounded-md bg-sf-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-sf-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sf-orange-600">Vote</button>
       </div>
     </form>
 
